@@ -1,6 +1,7 @@
 import "./javascript.syncat";
 
 function_signature > identifier,
+method_signature > property_identifier,
 {
   color: $function;
 }
@@ -21,7 +22,7 @@ predefined_type {
   color: $type;
 }
 
-"enum", "type" {
+"enum", "type", "interface", "implements", "private", "public", "protected" {
   color: $keyword;
 }
 
